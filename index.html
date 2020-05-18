@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Rock Paper Scissors</title>
+  <meta charset="UTF-8"/>
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+
+<h1>SCHERE-STEIN-PAPIER</h1>
+
+<div class="players">
+  <p class="counter" id="pscore">0</p>
+  <img class="icon" src="female-user.svg">
+  <img class="icon" src="robot.svg">
+  <p class="counter" id="cscore">0</p>
+</div>
+
+<div class="buttons">
+  <button class="button" data-key="0">Stein</button>
+  <button class="button" data-key="1">Schere</button>
+  <button class="button" data-key="2">Papier</button>
+</div>
+
+<div class="result-text" id="result-won">
+  <p>Du hast gewonnen! Klicke um noch eine Runde zu spielen.</p>
+</div>
+<div class="result-text" id="result-lost">
+  <p>Du hast verloren! Klicke um es nochmal zu probieren.</p>
+</div>
+
+<script src="test.js"></script>
+</body>
+</html>

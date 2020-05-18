@@ -1,1 +1,1 @@
-# ui-rock-paper-siccors
+# rock-paper-siccors
