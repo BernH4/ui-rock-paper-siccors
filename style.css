@@ -23,7 +23,6 @@ h1 {
 }
 .counter {
     font-size: 50px;
-
 }
 
 .buttons {
@@ -37,7 +36,7 @@ h1 {
 .icon {
     height: 100px;
     width: 100px;
-    margin: 0px 190px;
+    margin: 0px 90px;
 }
 #result-won {
     display: none;
