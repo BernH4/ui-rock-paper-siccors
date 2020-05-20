@@ -30,6 +30,17 @@ h1 {
     justify-content: center;
 }
 
+button {
+  padding: 8px 24px;
+  background: #264653;
+  color: #fff;
+  font-size: 24px;
+  font-weight: 300;
+  letter-spacing: 1.2px;
+  border: none;
+  border-radius: 6px;
+  box-shadow: 1px 1px 8px #888;
+}
 .button {
     margin: 0 30px;
 }
