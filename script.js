@@ -13,7 +13,11 @@ let waitForReset = 0;
 
 buttons = document.querySelectorAll('button')
 buttons.forEach(button => {
-    button.addEventListener('click', playRound)
+    button.addEventListener('click', (e) => {    
+        resetHighlight();
+        playRound(e);
+        selectionHighlight(e);    
+   });
 });
 
 resultWon.addEventListener('click', reset);
@@ -57,8 +61,10 @@ function checkWin(){
 
 //Computer chooses randomly "Rock", "Paper" or "Scissors"
 function computerPlay() {
-return random(0,2);
-
+    cs = random(0,2);
+    csbutton = document.querySelector(`[data-key="${cs}"]`);
+    csbutton.style.color = "red";
+    return cs;
 }
 
 function random(min, max) {
@@ -94,4 +100,16 @@ function bothPlay(ps,cs) {
         if (cs == 0)   return 0;//return "You lost! Rock beats Scissors.";
         if (cs == 2)  return 1;//return "You won! Scissors beats Paper";
     }
+}
+
+function selectionHighlight(e) {
+    e.target.style.border = "solid 5px green"
+}
+
+function resetHighlight() {
+
+    buttons.forEach(button => {
+        button.style.color = "#fff";
+        button.style.border = "none";
+    });
 }
